@@ -39,8 +39,9 @@ export default function RootLayout({
           <Link href={"/setting"}>Setting</Link>
         </nav>
         {children}
+        
         {/* parallel route */}
-        {!isAdmin && dashboard} 
+        {/* {!isAdmin && dashboard}  */}
       </body>
     </html>
   );
