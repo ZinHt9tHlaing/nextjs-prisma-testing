@@ -21,13 +21,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  dashboard,
 }: Readonly<{
   children: React.ReactNode;
-  dashboard: React.ReactNode;
 }>) {
-  const isAdmin = false;
-
   return (
     <html lang="en">
       <body
@@ -39,9 +35,6 @@ export default function RootLayout({
           <Link href={"/setting"}>Setting</Link>
         </nav>
         {children}
-        
-        {/* parallel route */}
-        {/* {!isAdmin && dashboard}  */}
       </body>
     </html>
   );
